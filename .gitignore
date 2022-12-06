@@ -1,0 +1,5 @@
+database.db
+python-telegram-bot
+venv
+.idea
+__pycache__

@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  santa_backend:
+    build: bot
+    container_name: santa_backend
+    ports:
+      - 4915:4915
+    environment:
+      PORT: 4915
+    volumes:
+      - ./database.db:/secret_santa/database/db.db
+    restart: always
+
+
+networks:
+  default:
+    name: secret_santa_network
